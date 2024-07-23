@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: #1f1f1f;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .brand {
+            color: #bb86fc;
+            font-weight: bold;
+            font-size: 1.5em;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        header .brand .mad {
+            color: #bb86fc;
+        }
+        header .brand .r {
+            color: #ffffff;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            padding-left: 70px; /* Add padding to make space for the brand text */
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            color: #ffffff;
+        }
+        .intro {
+            padding: 120px 20px 20px 20px; /* Adjust padding to account for the fixed header */
+            text-align: center;
+        }
+        .intro img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .articles {
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease-out;
+        }
+        .article {
+            background-color: #1f1f1f;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .article h2 {
+            margin-top: 0;
+            color: #bb86fc;
+        }
+        .contact-bar {
+            background-color: #1f1f1f;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-transform: uppercase;
+        }
+        .contact-bar a {
+            color: #bb86fc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-bar a:hover {
+            color: #ffffff;
+        }
+        .slide-container {
+            display: flex;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            margin: 20px 0;
+        }
+        .slide-container::-webkit-scrollbar {
+            display: none;
+        }
+        .slide {
+            min-width: 300px;
+            margin: 10px;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slide h2 {
+            margin-top: 0;
+            color: #bb86fc;
+        }
+        .slide p {
+            margin: 0;
+        }
+        
+        .html{
+          color:white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <span class="mad">mad</span><span class="r">R</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#articles">Articles</a>
+            <a href="https://wa.me/6282158717517">Contact</a>
+
+        </nav>
+    </header>
+    <div class="intro">
+        <img src="mamat.jpg" alt="Ahmad's Profile Picture">
+        <p><h2>Hello World!</h2><hr>I'm Ahmad, a beginner programmer,I've only been learning programming for about 3 months,and this is a website that I made in only with HTML,CSS,JS.</p>
+        <hr>
+        <p>
+          When creating this website I used a simple device,namely Android only and supported by ChatGPTo-4.
+        </p>
+        <hr>
+        <p>
+      I hope I can develop this skill and can become a full stack web developer one day, because this is not a short journey.
+        </p><hr>
+        <p>
+          You don't need to know too much about me,I just want to show you a test of my website profile,thats it.
+        </p><hr>
+    </div>
+    <div class="articles" id="articles">
+        <div class="article">
+            <h2>About This Website</h2>
+            <p>Website ini dibuat dengan menggunakan device sederhana dibantu oleh kecanggihan teknologi AI. Tujuan utama dari website ini adalah untuk menunjukkan bagaimana teknologi modern dapat membantu dalam pengembangan web, bahkan bagi programmer pemula.</p>
+            <p>
+              Kemajuan teknologi, terutama dalam Artificial Intelligence(AI), berkembang pesat dan memengaruhi berbagai aspek kehidupan kita. Inovasi seperti machine learning memungkinkan komputer untuk belajar dari data dan membuat keputusan yang lebih akurat. Dampak ini membuka peluang baru di berbagai industri dan meningkatkan efisiensi.</p>
+
+<p>
+Artificial Intelligence (AI) adalah cabang ilmu komputer yang menciptakan sistem dengan kemampuan mirip manusia. Dimulai pada tahun 1950-an, AI menggunakan algoritma untuk menganalisis data, belajar dari pola, dan membuat prediksi. Kini, AI mencakup berbagai teknologi, dari sistem berbasis aturan hingga model pembelajaran mendalam.</p>
+
+<p>
+Sama hal nya seperti website ini,AI dapat dimanfaatkan dalam pembuatan website untuk desain, pengalaman pengguna, dan dukungan pelanggan. Alat berbasis AI membantu dalam menentukan tata letak dan warna yang optimal, serta menyediakan chatbots untuk interaksi otomatis. Penggunaan AI meningkatkan fungsionalitas dan daya tarik website secara keseluruhan.
+            </p>
+            <p>
+              Awalnya website ini mau saya buat seperti "Link Tree" tapi ini kurang ada kesamaan dengan website profil pribadi,dan memang belum banyak fitur dan interaktifitas pada webs ini.Terima kasih kepada ChatGPT
+            </p>
+
+
+        </div>
+        <div class="article">
+            <h2>Belajar HTML</h2>
+            <p>HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman web...</p>
+            <a href=" https://www.w3schools.com/html/" class="html">Learn Here</a>
+            
+        </div>
+        <div class="article">
+            <h2>Belajar CSS</h2>
+            <p>CSS adalah bahasa stylesheet yang digunakan untuk mendesain tampilan halaman web...</p>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.w3schools.com/css/&ved=2ahUKEwjTvaDn-LyHAxUiyDgGHcJjDr0QFnoECBMQAQ&usg=AOvVaw0Xtbw_GBAChsgvZNkPLVGb" class="html">Learn Here</a>
+        </div>
+        <div class="article">
+            <h2>Belajar JavaScript</h2>
+            <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif...</p>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.w3schools.com/js/&ved=2ahUKEwjO37yI-byHAxWCxTgGHabZBL8QFnoECBcQAQ&usg=AOvVaw0InYy1JO9V7729n-hfV1ti" class="html">Learn here</a>
+        </div>
+    </div>
+    <div class="contact-bar" id="contact">
+        <a href="https://wa.me/6282158717517">Contact Me</a>
+        <a href="https://www.instagram.com/01000001r?igsh=dWZ3bHlnOG85c3Bu" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@01000001r_?_t=8oGCsyT0lZB&_r=1" target="_blank">TikTok</a>
+    </div>
+    <script>
+        // Event listener to show articles when scrolled to the bottom
+        window.addEventListener('scroll', function() {
+            var articles = document.getElementById('articles');
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+                articles.style.opacity = 1;
+                articles.style.transform = 'translateY(0)';
+            }
+        });
+    </script>
+</body>
+</html>
